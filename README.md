@@ -1,73 +1,45 @@
-# React + TypeScript + Vite
+# 🚀 Tailwind CSS 연합세션 실습 레포지터리
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tailwind CSS의 기초부터 컴포넌트 설계, 애니메이션 활용, 그리고 반응형 레이아웃까지 한 번에 학습할 수 있는 실습 프로젝트입니다. 본인에게 맞는 브랜치를 선택하여 실습을 진행해 주세요!
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌿 브랜치 구성 및 활용 방법
 
-## React Compiler
+이 레포지터리는 수강용 **문제지**와 **정답지**가 브랜치별로 분리되어 있습니다.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **`main` 브랜치 (수강자용 문제지)** 기본적인 HTML 마크업과 React 상태(`useState`)만 구현되어 있으며, 스타일 클래스(`className=""`)가 비어있는 기본 템플릿입니다. 세션을 들으며 직접 스타일을 채워나갑니다.
+  
+* **`example` 브랜치 (완성본 정답지)** 모든 실습 항목(디자인, 애니메이션, 반응형 레이아웃)의 Tailwind CSS 클래스가 꽉 채워진 완성본 화면입니다. 실습 중 막히거나 코드를 참고하고 싶을 때 확인하세요!
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📸 실습 화면 미리보기
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 📄 main 브랜치 (스타일 적용 전)
+> 수강생 여러분이 세션을 통해 직접 채워나갈 태초의 상태입니다. 😉
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+<img width="1918" alt="main_branch_preview" src="https://github.com/user-attachments/assets/6044fe18-3c44-42ea-85f5-08de820f46f3" />
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+<br />
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 🎨 example 브랜치 (스타일 적용 후 완성본)
+> Tailwind CSS의 반응형 시스템(`md:`)과 디자인 요소를 적용하기 전과 후의 차이를 한눈에 확인해 보세요.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+| 🖥️ 데스크탑 (PC 화면) | 📱 모바일 (화면 너비 축소) |
+| :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/38c2a222-0ab1-4545-816a-4aef35e9e6ce" width="100%" /> | <img src="https://github.com/user-attachments/assets/92406dac-c64f-4868-b915-14c4983f8faa" width="320px" /> |
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🛠️ 시작하기 (Getting Started)
+
+1. **레포지터리 클론 및 폴더 이동**
+   ```bash
+   git clone https://github.com/gjdbsdk/intercollegiate_session.git
+   cd intercollegiate_session```
+
+2. **패키지 설치**<br/>
+  ```npm install```
+
+3. **로컬 개발 서버 실행**<br/>
+   ```npm run dev```
