@@ -36,7 +36,7 @@ Tailwind CSS의 기초부터 컴포넌트 설계, 애니메이션 활용, 그리
 1. **레포지터리 클론 및 폴더 이동**
    ```bash
    git clone https://github.com/gjdbsdk/intercollegiate_session.git
-   cd intercollegiate_session```
+   cd intercollegiate_session
 
 2. **패키지 설치**<br/>
   ```npm install```
